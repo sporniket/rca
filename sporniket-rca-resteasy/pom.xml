@@ -1,16 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>com.sporniket.rca</groupId>
-		<artifactId>sporniket-rca</artifactId>
-		<version>19.05.00-SNAPSHOT</version>
-		<relativePath>../pom.xml</relativePath>
-	</parent>
-
 	<artifactId>sporniket-rca-resteasy</artifactId>
-	<!-- The version will match the supported version of resteasy (TBC : minor or patch version ?) -->
-	<version>xxx-SNAPSHOT</version>
+	<version>19.05.00-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<properties>
@@ -20,8 +12,8 @@
 		<version.maven-javadoc-plugin>3.0.1</version.maven-javadoc-plugin>
 	</properties>
 
-	<name>sporniket-rca-model</name>
-	<description>Doclet for generating javabeans by encapsulating a POJO structure.</description>
+	<name>sporniket-rca-resteasy</name>
+	<description>Demo project using sporniket-rca-model for testing a rest service implemented with resteasy.</description>
 	<url>${url.base}/blob/master/${project.artifactId}</url>
 
 	<distributionManagement>

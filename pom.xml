@@ -33,7 +33,6 @@
 
 	<modules>
 		<module>sporniket-rca-model</module>
-		<module>sporniket-rca-resteasy</module>
 	</modules>
 
 	<dependencyManagement>
