@@ -10,6 +10,11 @@
 		<version.sporniket-javabeans-doclet>19.04.00</version.sporniket-javabeans-doclet>
 		<!-- maven plugins version -->
 		<version.maven-javadoc-plugin>3.0.1</version.maven-javadoc-plugin>
+        <!-- ======================================================================== -->
+        <!-- j2ee -->
+        <servlet-api.version>3.1.0</servlet-api.version>
+        <jaxrs.version>2.1</jaxrs.version>
+        <resteasy.version>3.5.1.Final</resteasy.version>
 	</properties>
 
 	<name>sporniket-rca-resteasy</name>
@@ -33,6 +38,41 @@
 
 		<!-- ===EXTERNAL DEPENDENCIES (non test)=== -->
 		<!-- Sporniket core -->
+		
+        <!-- J2E -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet-api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>${jaxrs.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxrs</artifactId>
+            <version>${resteasy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-spring</artifactId>
+            <version>${resteasy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jackson2-provider</artifactId>
+            <version>${resteasy.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
 
 		<!-- ===TEST DEPENDENCIES=== -->
 		<dependency>
